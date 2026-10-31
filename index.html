@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HOMEPAGE -->
+  <main id="homePage" class="page">
+    <div class="portal-card">
+
+      <div class="school-logo">SA</div>
+
+      <h1>ST. ANTONY'S</h1>
+      <h2>HIGHER SECONDARY SCHOOL</h2>
+
+      <div class="line"></div>
+
+      <h3>STUDENT RESULT PORTAL</h3>
+      <p class="subtitle">Academic Session 2026</p>
+
+      <form id="loginForm">
+
+        <label for="studentName">Student Name</label>
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="studentEmail">Email Address</label>
+        <input
+          type="email"
+          id="studentEmail"
+          placeholder="Enter your email"
+          required
+        >
+
+        <button type="submit">VIEW RESULT →</button>
+
+      </form>
+
+      <p class="small-text">Enter your details to continue.</p>
+
+    </div>
+  </main>
+
+
+  <!-- LOADING SCREEN -->
+  <main id="loadingPage" class="page hidden">
+
+    <div class="loading-card">
+
+      <div class="loader"></div>
+
+      <h2>PLEASE WAIT</h2>
+      <p>Fetching student result...</p>
+
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+
+      <small>Processing request</small>
+
+    </div>
+
+  </main>
+
+
+  <!-- RESULT PAGE -->
+  <main id="resultPage" class="page hidden">
+
+    <div class="result-card">
+
+      <header class="result-header">
+
+        <div class="school-logo small-logo">SA</div>
+
+        <h1>ST. ANTONY'S HIGHER SECONDARY SCHOOL</h1>
+        <p>ACADEMIC PERFORMANCE REPORT</p>
+        <h2>CLASS IX EXAMINATION — 2026</h2>
+
+      </header>
+
+
+      <!-- STUDENT DETAILS -->
+      <section class="student-details">
+
+        <div>
+          <span>Student Name</span>
+          <strong id="displayName">Student Name</strong>
+        </div>
+
+        <div>
+          <span>Father's Name</span>
+          <strong>Tulu Tanti</strong>
+        </div>
+
+        <div>
+          <span>Mother's Name</span>
+          <strong>Gloria Tanti</strong>
+        </div>
+
+        <div>
+          <span>Class</span>
+          <strong>IX</strong>
+        </div>
+
+        <div>
+          <span>Academic Year</span>
+          <strong>2026</strong>
+        </div>
+
+        <div>
+          <span>Registration No.</span>
+          <strong>—</strong>
+        </div>
+
+      </section>
+
+
+      <!-- MARKS TABLE -->
+      <h3 class="table-heading">SCHOLASTIC PERFORMANCE</h3>
+
+      <div class="table-wrapper">
+        <table>
+
+          <thead>
+            <tr>
+              <th>Sl.</th>
+              <th>Subject</th>
+              <th>Full Marks</th>
+              <th>Marks Obtained</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>01</td>
+              <td>English</td>
+              <td>100</td>
+              <td>64</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>02</td>
+              <td>Computer Science</td>
+              <td>100</td>
+              <td>57</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>03</td>
+              <td>Social Science</td>
+              <td>100</td>
+              <td>45</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>04</td>
+              <td>General Science</td>
+              <td>100</td>
+              <td>50</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>05</td>
+              <td>MIL Hindi</td>
+              <td>100</td>
+              <td>40</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>06</td>
+              <td>Mathematics</td>
+              <td>100</td>
+              <td>45</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+            <tr>
+              <td>07</td>
+              <td>Moral Science</td>
+              <td>GRADE</td>
+              <td>B</td>
+              <td class="pass">PASS</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- SUMMARY -->
+      <section class="summary">
+
+        <div>
+          <span>Total Marks</span>
+          <strong>306 / 600</strong>
+        </div>
+
+        <div>
+          <span>Percentage</span>
+          <strong>51.00%</strong>
+        </div>
+
+        <div>
+          <span>Overall Result</span>
+          <strong class="pass">PASS</strong>
+        </div>
+
+      </section>
+
+      <p class="grade-note">
+        Moral Science is graded separately and is not included in the numerical total.
+      </p>
+
+      <div class="result-footer">
+        <p>End of Result</p>
+        <p>Personal copy · 2026</p>
+      </div>
+
+      <button class="back-button" onclick="goHome()">
+        ← BACK TO HOME
+      </button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
